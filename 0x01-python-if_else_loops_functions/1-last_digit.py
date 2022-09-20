@@ -4,4 +4,4 @@ number = random.randint(-10000, 10000)
 
 last_digit = abs(number) % 10
 
-print(f"Last digit of {number} is {last_digit}")
+print(f"Last digit of {number:d} is {last_digit}")

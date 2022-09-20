@@ -3,4 +3,4 @@ for ch in range(97, 123):
     if chr(ch) == 'e' or chr(ch) == 'q':
         continue
     else:
-        print(f"{chr(ch)}", end="")
+        print("{0}".format(chr(ch)), end="")

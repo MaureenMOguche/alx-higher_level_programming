@@ -9,4 +9,4 @@ def fizzbuzz():
         elif value % 5 == 0 and value % 3 != 0:
             print("Buzz", end=' ')
         else:
-            print(value, end =' ')
+            print(value, end=' ')

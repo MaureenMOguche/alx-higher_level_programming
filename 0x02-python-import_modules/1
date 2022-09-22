@@ -1,4 +1,0 @@
-#!/usr/bin/python3
-from sys import argv
-if len(argv) == 1:
-    print(f"{argv[1]} argument")

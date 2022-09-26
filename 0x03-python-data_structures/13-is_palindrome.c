@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stddef.h>
 
 /**
  * is_palindrome - checks if a linked list is a palindrome
@@ -11,15 +12,15 @@ int is_palindrome(listint_t **head)
 	int result = 1;
 	listint_t *fast, *slow, *h1, *h2, *tmp;
 
-	if (!list)
+	if (!head)
 		return (0);
 
 	/* if list length is less than 2 */
-	if (!(*list) || !((*list)->next))
+	if (!(*head) || !((*head)->next))
 		return (1);
 
 	/* find the middle node */
-	slow = fast = *list;
+	slow = fast = *head;
 	while (fast && fast->next)
 	{
 		slow = slow->next;
@@ -33,7 +34,7 @@ int is_palindrome(listint_t **head)
 	tmp = h2;
 
 	/* compare the two halves */
-	h1 = *list;
+	h1 = *head;
 	while (h2)
 	{
 		if (h2->n != h1->n)

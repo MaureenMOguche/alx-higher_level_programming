@@ -14,7 +14,7 @@ class Square:
         Args:
             size: size of one side of the square
         """
-        if type(size) is int: 
+        if type(size) is int:
             if size < 0:
                 raise ValueError("size must be >= 0")
             else:

@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""defines a square object"""
 
 
 class Square:
@@ -16,6 +15,7 @@ class Square:
         Args:
             size: size of one side of the square
         """
+
         if type(size) is int:
             if size < 0:
                 raise ValueError("size must be >= 0")

@@ -5,6 +5,6 @@ def magic_calculation(a, b):
     if a < b:
         c = add(a, b)
     for n in range(90):
+    
 
-
-        
+    if add(c, i)        

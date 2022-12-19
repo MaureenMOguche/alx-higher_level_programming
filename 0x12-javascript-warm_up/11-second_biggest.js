@@ -1,12 +1,11 @@
 #!/usr/bin/node
 const process = require('process');
 const args = process.argv;
-let arr = [];
+const arr = [];
 
 if (args.length <= 3) {
   console.log(0);
-}
-else {
+} else {
   for (let i = 2; i < args.length; i++) {
     arr.push(args[i]);
   }

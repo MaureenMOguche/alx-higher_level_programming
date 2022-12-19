@@ -4,7 +4,7 @@ const args = process.argv;
 
 function factorial (a) {
   if (a === undefined) {
-    console.log(1);
+    return 1;
   } else {
     parseInt(a);
 

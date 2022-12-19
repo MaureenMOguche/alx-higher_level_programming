@@ -2,9 +2,14 @@
 const process = require('process');
 const args = process.argv;
 
+arr = [];
 if (args.length <= 3) {
   console.log(0);
 } else {
-  args.sort();
-  console.log(args[args.length - 2]);
+  for (let i = 2; i < args.length; i++)
+  {
+	  arr.push(args[i]);
+  }
+  arr.sort();
+  console.log(arr[arr.length - 2]);
 }
